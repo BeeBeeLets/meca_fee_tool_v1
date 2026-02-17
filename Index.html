@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>メカニック料金計算ツール </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ▼ 左固定サイドメモ -->
+<div id="sideMemo">
+  <h3>選択中の項目</h3>
+  <div id="sideMemoList"></div>
+  <div id="sideMemoTotal">合計：0万<br>(0円)</div>
+</div>
+
+<!-- ▼ 右上固定の合計 -->
+<div id="topTotalBox">
+  <div id="topTotal">合計：0万<br>(0円)</div>
+</div>
+
+<!-- ▼ プリセット（右上固定合計金額の下） -->
+<div id="presets"></div>
+
+<!-- ▼ 左下固定リセット -->
+<button id="resetBtn">リセット</button>
+
+<div id="container">
+  <h1>メカニック料金計算ツール</h1>
+
+<!-- 修理＆外装カスタム -->
+<h2>修理＆外装カスタム</h2>
+<div class="grid">
+  <div class="card">
+    <label>通常修理（1か所 7万）</label>
+    <input type="number" id="normalFix" value="0" min="0">
+  </div>
+
+  <div class="card">
+    <label>外装カスタム（1か所 5万）</label>
+    <input type="number" id="customExterior" value="0" min="0">
+  </div>
+</div>
+
+  <!-- ニトロ補充 -->
+  <h2>ニトロ補充</h2>
+  <div class="grid">
+    <div class="card">
+      <label>ニトロ補充（50万）</label>
+      <input type="checkbox" class="price" value="500000">
+    </div>
+  </div>
+
+  <!-- ▼ カテゴリ生成場所 -->
+  <div id="categories"></div>
+
+  <div class="result" id="resultArea">合計金額：0万（0円）</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
