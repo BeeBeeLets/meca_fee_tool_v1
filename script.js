@@ -241,7 +241,7 @@ function updateTotal() {
   };
 
   const nf = Number(normalFix.value);
-  if (nf) add(nf * 70000, `通常修理 × ${nf}`);
+  if (nf) add(nf * 80000, `通常修理 × ${nf}`);
 
   const ce = Number(customExterior.value);
   if (ce) add(ce * 50000, `外装カスタム × ${ce}`);
@@ -287,5 +287,6 @@ resetBtn.onclick = () => {
   document.querySelectorAll("input[type='number']").forEach(n => n.value = 0);
   updateTotal();
 };
+
 
 document.addEventListener("input", updateTotal);
