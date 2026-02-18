@@ -116,6 +116,9 @@ const presets = {
     { cat: "その他", name: "アーマー" },
     { cat: "その他", name: "ターボ" },
     { cat: "その他", name: "ニトロ" }
+  ],
+    "ハーネス単品": [
+    { cat: "その他", name: "ハーネス" }
   ]
 };
 
@@ -290,3 +293,4 @@ resetBtn.onclick = () => {
 
 
 document.addEventListener("input", updateTotal);
+
